@@ -1,11 +1,14 @@
 {
-    "files.associations": {
-        "algorithm": "cpp",
-        "initializer_list": "cpp",
-        "type_traits": "cpp",
-        "vector": "cpp",
-        "xstring": "cpp",
-        "xutility": "cpp",
-        "ostream": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "__bit_reference": "cpp",
+    "algorithm": "cpp",
+    "bitset": "cpp",
+    "chrono": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp"
+  }
 }

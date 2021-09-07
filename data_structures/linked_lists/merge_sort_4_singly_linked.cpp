@@ -57,16 +57,11 @@ sort(Node *head) {
     if (head->next == NULL)
         return head;
 
-    Node *mid = new Node;
-    mid = get_mid(head);
-
-    Node *head2 = new Node;
-    head2 = mid->next; // begining of second sublist
-
+    Node *mid = get_mid(head);
+    Node *head2 = mid->next; // begining of second sublist
     mid->next = NULL; // unlink both sublists
 
-    Node *final = merge(sort(head), sort(head2));
-    return final;
+    return merge(sort(head), sort(head2));
 }
 
 /* Utility functions */

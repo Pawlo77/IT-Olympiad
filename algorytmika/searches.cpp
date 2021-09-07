@@ -17,6 +17,13 @@ int BinarySearch(int arr[], int n, int k) {
         
     while (start <= end) {
         middle = (start + end) / 2;
+
+        /**
+         Note that for large values of start and end, 
+         exceeding int range it fails. Possible solutions:
+         - middle = low + ((high - low) / 2)
+         - FASTER: middle = ((usigned int) low + (usigned int) high) >> 1
+         */
             
         if (arr[middle] == k) {
             return middle + 1;
